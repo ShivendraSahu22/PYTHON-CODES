@@ -1,0 +1,172 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/ShivendraSahu22/PYTHON-CODES/blob/main/Tuple\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Tuples"
+      ],
+      "metadata": {
+        "id": "KTEe0iEC9Hhe"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "#empty\n",
+        "t = ()\n",
+        "#having\n",
+        "t = (1,2,3)\n",
+        "print(t)\n",
+        "#tuple with mixed datatype\n",
+        "t= (1,\"name\",2,\"hii\")\n",
+        "print(t)\n",
+        "#nested tuple\n",
+        "t = (1,(1,2,3),[1,\"name\",2,\"hii\"])\n",
+        "print(t)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CecdSKZw9Nzs",
+        "outputId": "aea573cd-263f-426e-8297-54f05e8dfb8d"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(1, 2, 3)\n",
+            "(1, 'name', 2, 'hii')\n",
+            "(1, (1, 2, 3), [1, 'name', 2, 'hii'])\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Type of tuple"
+      ],
+      "metadata": {
+        "id": "oWxt3S7H-d7-"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "t = ('name')\n",
+        "print(type(t))\n",
+        "print(t)\n",
+        "t = ('name',)\n",
+        "print(type(t))\n",
+        "print(t)\n",
+        "#parenthesis is optional\n",
+        "t = 'name',\n",
+        "print(type(t))\n",
+        "print(t)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GpT3gR3k-vn3",
+        "outputId": "58e60d08-3dde-4e5a-fbf0-0319b832c74b"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'str'>\n",
+            "name\n",
+            "<class 'tuple'>\n",
+            "('name',)\n",
+            "<class 'tuple'>\n",
+            "('name',)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "t = (\"name\",\"hii\",\"hello\",\"tata\",\"bye\")\n",
+        "print(t[2])\n",
+        "#negative index\n",
+        "print(t[-1])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6nYYdz2x_nsc",
+        "outputId": "254fa683-7fa8-4a2d-e0a3-d7e24b62f02d"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "hello\n",
+            "bye\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#nested tuple\n",
+        "t = ('ABC',('hii','hello','bye'))\n",
+        "print(t[1])\n",
+        "print(t[1][2])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jk-B-bMkATCm",
+        "outputId": "ce1ce7bb-5480-4b36-a127-16abf1708b2a"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "('hii', 'hello', 'bye')\n",
+            "bye\n"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Welcome To Colab",
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
